@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chorka Textile Ltd - Defect Data Entry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+	<script src="path/to/js/defect.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <h1>Chorka Textile Ltd</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="defect.html">Defect Data Entry</a></li>
+          <li><a href="summary.html">Quality Reports</a></li>
+          <li><a href="training.html">Consulting and Training Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Defect Data Entry</h2>
+      <form>
+        <fieldset>
+          <legend>Production Details</legend>
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" required>
+          <label for="unit">Unit:</label>
+          <input type="text" name="unit" id="unit" required>
+          <label for="line">Line:</label>
+          <input type="text" name="line" id="line" required>
+          <label for="buyer">Buyer:</label>
+          <input type="text" name="buyer" id="buyer" required>
+          <label for="po">PO:</label>
+          <input type="text" name="po" id="po" required>
+          <label for="color">Color:</label>
+          <input type="text" name="color" id="color" required>
+          <label for="style">Style:</label>
+          <input type="text" name="style" id="style" required>
+          <label for="item">Item:</label>
+          <input type="text" name="item" id="item" required>
+        </fieldset>
+        <fieldset>
+          <legend>Defect Details</legend>
+          <label for="inline_check_qty">Inline Check Qty:</label>
+          <input type="number" name="inline_check_qty" id="inline_check_qty" required>
+          <label for="inline_defect_qty">Inline Defect Qty:</label>
+          <input type="number" name="inline_defect_qty" id="inline_defect_qty" required>
+          <label for="end_table_check_qty">End Table Check Qty:</label>
+          <input type="number" name="end_table_check_qty" id="end_table_check_qty" required>
+          <label for="end_table_defect_qty">End Table Defect Qty:</label>
+          <input type="number" name="end_table_defect_qty" id="end_table_defect_qty" required>
+          <label for="end_table_reject_qty">End Table Reject Qty:</label>
+          <input type="number" name="end_table_reject_qty" id="end_table_reject_qty" required>
+          <label for="cutting_reject_qty">Cutting Reject Qty:</label>
+          <input type="number" name="cutting_reject_qty" id="cutting_reject_qty" required>
+		 <label for="fabric_reject_qty">Fabric Reject Qty:</label>
+		<input type="number" name="fabric_reject_qty" id="fabric_reject_qty" required>
+		<label for="sewing_reject_qty">Sewing Reject Qty:</label>
+		<input type="number" name="sewing_reject_qty" id="sewing_reject_qty" required>
+		<label for="total_defect_pct">Total Defect %:</label>
+		<input type="number" name="total_defect_pct" id="total_defect_pct" readonly>
+</fieldset>
+<button type="submit">Submit</button>
+</form>
+</main>
+<script src="js/defect.js"></script>
+  </body>
+</html>

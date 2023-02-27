@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quality Summary Report</title>
+  <style>
+    /* CSS styles go here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quality Summary Report</h1>
+    <p>Generated on: <span id="report-date"></span></p>
+  </header>
+  
+  <main>
+    <h2>Overall Quality Metrics</h2>
+    <div class="quality-metrics">
+      <p>Defect Density: <span id="defect-density"></span></p>
+      <p>Test Coverage: <span id="test-coverage"></span></p>
+      <p>Code Review Findings: <span id="code-review-findings"></span></p>
+    </div>
+    
+    <h2>Defect Breakdown</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Defect Type</th>
+          <th>Number of Defects</th>
+        </tr>
+      </thead>
+      <tbody id="defect-breakdown-table">
+        <!-- Defect breakdown table rows will be dynamically generated here -->
+      </tbody>
+    </table>
+    
+    <h2>Code Review Findings</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File Name</th>
+          <th>Reviewer</th>
+          <th>Findings</th>
+        </tr>
+      </thead>
+      <tbody id="code-review-table">
+        <!-- Code review table rows will be dynamically generated here -->
+      </tbody>
+    </table>
+  </main>
+  
+  <script>
+    // JavaScript code to populate the dynamic data goes here
+  </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+  border: none;
+  padding: 0;
+}
+
+form legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="number"], form input[type="text"], form input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+form input[type="number"]:focus, form input[type="text"]:focus, form input[type="date"]:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+
+form button[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  form label {
+    width: 100%;
+  }
+  
+  form input[type="number"], form input[type="text"], form input[type="date"] {
+    width: 100%;
+  }
+  
+  form button[type="submit"] {
+    width: 100%;
+}
+}
+
+/* Additional Styles for Defect Data Entry Sheet */
+.defect-data-entry {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.defect-data-entry fieldset {
+flex: 1 0 45%;
+}
+
+.defect-data-entry legend {
+font-size: 24px;
+}
+
+.defect-data-entry label {
+width: 200px;
+}
+
+.defect-data-entry input[type="number"] {
+width: 150px;
+}
+
+.defect-data-entry input[type="date"] {
+width: 200px;
+}
+
+.defect-data-entry input[type="text"] {
+width: 100%;
+}
+
+.defect-data-entry select {
+width: 250px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+}
+
+.defect-data-entry button[type="submit"] {
+margin-top: 20px;
+}
+
+.defect-data-entry table {
+border-collapse: collapse;
+margin-top: 20px;
+width: 100%;
+}
+
+.defect-data-entry table thead {
+background-color: #333;
+color: #fff;
+}
+
+.defect-data-entry table th, .defect-data-entry table td {
+padding: 10px;
+text-align: center;
+border: 1px solid #ccc;
+}
+
+.defect-data-entry table tbody tr:hover {
+background-color: #f2f2f2;
+}
+
+.defect-data-entry table tfoot tr:nth-child(odd) {
+background-color: #f2f2f2;
+}
+
+.defect-data-entry .total-defect-pct {
+font-weight: bold;
+font-size: 18px;
+margin-top: 20px;
+}
+
+.defect-data-entry .error {
+color: red;
+margin-top: 10px;
+}
